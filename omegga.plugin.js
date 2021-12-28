@@ -99,7 +99,7 @@ module.exports = class CountdownPlugin {
 
         setInterval(async () => {
             try {
-                const diff = Math.round(Math.abs(this.config["unix-timestamp"] - Date.now() / 1000));
+                const diff = Math.round(Math.max(this.config["unix-timestamp"] - Date.now() / 1000, 0));
 
                 const hh = Math.floor((diff / 3600) % 24);
                 const mm = Math.floor((diff / 60) % 60);
