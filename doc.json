@@ -1,0 +1,13 @@
+{
+    "name": "nycountdown",
+    "author": "x",
+    "description": "Countdown to New Years 2022",
+    "config": {
+        "unix-timestamp": {
+            "description": "The Unix timestamp we're counting down to. By default, midnight on January 1st, 2022, EST.",
+            "type": "number",
+            "default": 1641013200
+        }
+    },
+    "commands": []
+}
